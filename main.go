@@ -9,12 +9,12 @@ const (
 	phimax = 0.5
 	g      = 9.81
 	l1     = 3.0
-	l2     = 3.0
+	l2     = 1.0
 )
 
 func main() {
 	points := plotter.XYs{}
-	deltat := 1.0 / 100.0
+	deltat := 1.0 / 10.0
 	for i := 0; i <= 500; i++ {
 		if i == 0 {
 			// as inital value for x we use x0
@@ -23,7 +23,7 @@ func main() {
 				Y: x(x0, 0, deltat),
 			})
 		} else {
-			t := float64(i) / 100.0
+			t := float64(i) / 10.0
 			xprev := points[i-1].X
 			points = append(points, plotter.XY{
 				X: t,
