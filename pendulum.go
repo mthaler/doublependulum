@@ -10,6 +10,8 @@ func x(x, t, deltat float64) float64 {
 
 	// The equation of motion is a coupled set of differential equations which I think cannot be solved analytically, thus we use
 	// the Euler method to solve it numerically.
+	// The Euler method only works for first order differential equations. The equation of motion is a a coupled set of two second
+	// order differential equations, thus we first have to transform it to first order differential equations
 	xdot := -omega1*math.Sin(omega1*t) - omega2*math.Sin(omega2*t)
 	return x + xdot + deltat
 }
