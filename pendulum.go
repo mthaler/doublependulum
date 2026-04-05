@@ -17,6 +17,14 @@ func x(x, t, deltat float64) float64 {
 	// The Euler method only works for first order differential equations. The equation of motion is a a coupled set of two second
 	// order differential equations, thus we first have to transform it to first order differential equations
 	//
+	// we make the following substituions:
+	// y1 = theta1
+	// y2 = theta1dot
+	// y3 = theta2
+	// y4 = theta2dot
+	//
+	// then we get:
+	//
 	// th1 = th1dot
 	// th1 dot = [(m1+m2)l1-m2l1cos^2(th1-th2)]^-1 [-m2l1th1dot^2sin(th1-th2)cos(th1-th2)]+m2gsin(th2)cos(th1-th2)-m2l2th2dot^2sin(th1-th2-(m1+m2)gsin(th1)
 	// th2 = th2dot
