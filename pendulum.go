@@ -29,6 +29,9 @@ package main
 // y3dot = y4
 // y4dot = [l2 - m2l2/(m1 + m2)cos^2(y1-y3)]^-1[l1 y2^2sin(y1-y3)-gsin(y3)+m2l2/(m1 +2)y4^2sin(y1-y3)cos(y1-y3)+gsin(y1)cos(y1-y3)]
 
-func x(x, t, deltat float64) float64 {
-	return 0.0
+func x(y1prev, y2prev, y3prev, y4prev, t, deltat float64) (float64, float64, float64, float64) {
+	y1 := y1prev + deltat * y2
+	y2 := ((m1+m2)l1-m2l1cos^2(y1-y3))^-1 [-m2l1y2^2sin(y1-y3)cos(y1-y3)]+m2gsin(y3)cos(y1-y3)-m2ly4^2sin(y1-y3)-(m1+m2)gsin(y1)
+	y3 := 
+	return 0.0, 0.0, 0.0, 0.0
 }
