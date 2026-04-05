@@ -29,10 +29,10 @@ func x(x, t, deltat float64) float64 {
 	//
 	// then we get:
 	//
-	// th1 = th1dot
-	// th1 dot = [(m1+m2)l1-m2l1cos^2(th1-th2)]^-1 [-m2l1th1dot^2sin(th1-th2)cos(th1-th2)]+m2gsin(th2)cos(th1-th2)-m2l2th2dot^2sin(th1-th2-(m1+m2)gsin(th1)
-	// th2 = th2dot
-	// th2dot = [l2 - m2l2/(m1 + m2)cos^2(th1-th2)]^-1[l1 th1dot^2sin(th1-th2)-gsin(th2)+th2dot^2sin(th1-th2)cos(th1-th2)+gsin(th1)cos(th1-th2)]
+	// y1dot = y2
+	// y2dot = [(m1+m2)l1-m2l1cos^2(y1-y3)]^-1 [-m2l1y2^2sin(y1-y3)cos(y1-y3)]+m2gsin(y3)cos(y1-y3)-m2ly4^2sin(y1-y3)-(m1+m2)gsin(y1)
+	// y3dot = y4
+	// y4dot = [l2 - m2l2/(m1 + m2)cos^2(y1-y3)]^-1[l1 y2^2sin(y1-y3)-gsin(y3)+m2l2/(m1 +2)y4^2sin(y1-y3)cos(y1-y3)+gsin(y1)cos(y1-y3)]
 	xdot := -omega1*math.Sin(omega1*t) - omega2*math.Sin(omega2*t)
 	return x + xdot + deltat
 }
