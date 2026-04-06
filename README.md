@@ -8,8 +8,11 @@ Positions:
 $$
 \begin{equation}
 x_1 = l_1\cdot sin(\theta_1) \\
+
 y_1 = -l_1\cdot cos(\theta_1) \\
+
 x_2 =  l_1\cdot sin(\theta_1) +  l_2\cdot sin(\theta_2) \\
+
 y_2 = -l_1\cdot cos(\theta_1) -l_2\cdot cos(\theta_2)
 \end{equation}
 $$
