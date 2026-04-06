@@ -4,10 +4,19 @@ The equation of motion and the phase diagram of a pendulum
 Positions:
 
 $$
-x_1 = l_1\dot sin(\theta_1)
-y_1 = -l_1\dot cos(\theta_1)
-x_2 =   l_1\dot sin(\theta_1) +  l_2\dot sin(\theta_2)
-y_2 = -l_1\dot cos(\theta_1) -l_2\dot cos(\theta_2)
+x_1 = l_1\cdot sin(\theta_1)
+y_1 = -l_1\cdot cos(\theta_1)
+x_2 =   l_1\cdot sin(\theta_1) +  l_2\cdot sin(\theta_2)
+y_2 = -l_1\cdor cos(\theta_1) -l_2\cdot cos(\theta_2)
+$$
+
+Velocities:
+
+$$
+\dot{x_1} = \dot{\theta_1} l_1 cos(\theta_1)
+\dot{y_1} = \dot{\theta_1} l_1 sin(\theta_1)
+\dot{x_2} = \dot{\theta_1} l_1 cos(\theta_1) + \dot{\theta_2} l_2 cos(\theta_2)
+\dot{y_2} = \dot{\theta_1} l_1 sin(\theta_1) + \dot{\theta_2} l_2 sin(\theta_2)
 $$
 
 Equation of motion:
