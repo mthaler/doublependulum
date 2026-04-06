@@ -57,9 +57,11 @@ where $q_i$ are the generalized coordinates (in our case the angles). We get:
 ```math
 \begin{aligned}
 (m_1 + m_2)l_1^2 \ddot{\theta}_1 + m_2 l_1 l_2 \ddot{\theta}_2 cos(\theta_1-\theta_2) + m_2 l_1 l_2 \ddot{\theta}_2 sin(\theta_1 - \theta_2) + (m_1 + m_22) g l_2 sin(\theta_1) &= 0 \\
-\ddot{\theta_2} + \ddot{\theta_1} cos(th1-th2) - l1 th1dot^2 sin(th1-th2) + g sin(th2) = 0
+\ddot{\theta_2} + \ddot{\theta_1} cos(\theta_1-\theta_2) - l_1 \dot{\theta}_1^2 sin(\theta_1-\theta_2) + g sin(\theta_2) &= 0
 \end{aligned}
 ```
+
+The equation of motion is a coupled set of differential equations which I think cannot be solved analytically, thus we use the Euler method to solve it numerically. The Euler method only works for first order differential equations. The equation of motion is a a coupled set of two second order differential equations, thus we first have to transform it to first order differential equations
 
 Equation of motion:
 
