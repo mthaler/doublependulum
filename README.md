@@ -1,10 +1,11 @@
 # doublependulum
 The equation of motion and the phase diagram of a pendulum
 
+I used this video to derive the equation of motion: [equation of motion](https://www.youtube.com/watch?v=tc2ah-KnDXw)
+
 Positions:
 
-$$
-x_1 = l_1\cdot sin(\theta_1)
+$$x_1 = l_1\cdot sin(\theta_1)
 
 y_1 = -l_1\cdot cos(\theta_1)
 
