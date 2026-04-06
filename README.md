@@ -17,13 +17,12 @@ Positions:
 Velocities:
 
 ```math
-\dot{x}_1 = \dot{\theta_1} l_1 cos(\theta_1)
-
-\dot{y}_1 = \dot{\theta_1} l_1 sin(\theta_1)
-
-\dot{x}_2 = \dot{\theta_1} l_1 cos(\theta_1) + \dot{\theta_2} l_2 cos(\theta_2)
-
-\dot{y}_2 = \dot{\theta_1} l_1 sin(\theta_1) + \dot{\theta_2} l_2 sin(\theta_2)
+\begin{aligned}
+& \dot{x}_1 = \dot{\theta_1} l_1 cos(\theta_1) \\
+& \dot{y}_1 = \dot{\theta_1} l_1 sin(\theta_1) \\
+& \dot{x}_2 = \dot{\theta_1} l_1 cos(\theta_1) + \dot{\theta_2} l_2 cos(\theta_2) \\
+& \dot{y}_2 = \dot{\theta_1} l_1 sin(\theta_1) + \dot{\theta_2} l_2 sin(\theta_2)
+\end{aligned}
 ```
 
 Equation of motion:
