@@ -52,7 +52,7 @@ The Euler-Lagrange equation for the equation of motion is
 \frac{d}{dt}\frac{dL}{d \dot{q}_i} - \frac{dL}{d q_i}  = 0 
 ```
 
-We get:
+where $q_i$ are the generalized coordinates (in our case the angles). We get:
 
 ```math
 \begin{aligned}
@@ -60,8 +60,6 @@ We get:
 l2th2dotdot + l1th1dotdot cos(th1-th2) - l1 th1dot^2 sin(th1-th2) + g sin(th2) = 0
 \end{aligned}
 ```
-
-where $q_i$ are the generalized coordinates (in our case the angles)
 
 Equation of motion:
 
