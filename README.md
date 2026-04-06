@@ -34,6 +34,12 @@ V &= m_1gy_1+m_2gy_2 \\
 \end{aligned}
 ```
 
+Kinetic energy:
+
+```math
+T = 1/2 m_1 l_1^2 \dot{theta}_1
+```
+
 Equation of motion:
 
 ![Equation of Motion](eom.png)
