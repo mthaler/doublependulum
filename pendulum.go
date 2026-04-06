@@ -2,13 +2,6 @@ package main
 
 // The equation of motion is from this video: https://www.youtube.com/watch?v=aTMJX1ZgMB0&t=433s
 //
-// l2th2dotdot + l1th1dotdot cos(th1-th2) - l1 th1dot^2 sin(th1-th2) + g sin(th2) = 0
-//
-// The equation of motion is a coupled set of differential equations which I think cannot be solved analytically, thus we use
-// the Euler method to solve it numerically.
-// The Euler method only works for first order differential equations. The equation of motion is a a coupled set of two second
-// order differential equations, thus we first have to transform it to first order differential equations
-//
 // we make the following substituions:
 // y1 = theta1
 // y2 = theta1dot
