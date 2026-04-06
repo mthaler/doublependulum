@@ -65,9 +65,9 @@ The equation of motion is a coupled set of differential equations which I think 
 
 ```math
 \begin{aligned}
-y_1 &= \theta_1
-y_2 &= \dot{\theta}_1
-y_3 &= \theta_2
+y_1 &= \theta_1\\
+y_2 &= \dot{\theta}_1\\
+y_3 &= \theta_2\\
 y_4 &= \dot{\theta}_2
 \end{aligned}
 ```
