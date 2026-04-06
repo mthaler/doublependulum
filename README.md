@@ -6,12 +6,12 @@ I used this video to derive the [equation of motion](https://www.youtube.com/wat
 Positions:
 
 ``` math
-\begin{multline}
-x_1 = l_1\cdot sin(\theta_1) \\
-y_1 = -l_1\cdot cos(\theta_1) \\
-x_2 =  l_1\cdot sin(\theta_1) +  l_2\cdot sin(\theta_2) \\
-y_2 = -l_1\cdot cos(\theta_1) -l_2\cdot cos(\theta_2)
-\end{multline}
+\begin{aligned}
+& x_1 = l_1\cdot sin(\theta_1) \\
+& y_1 = -l_1\cdot cos(\theta_1) \\
+& x_2 =  l_1\cdot sin(\theta_1) +  l_2\cdot sin(\theta_2) \\
+& y_2 = -l_1\cdot cos(\theta_1) -l_2\cdot cos(\theta_2)
+\end{aligned}
 ```
 
 Velocities:
