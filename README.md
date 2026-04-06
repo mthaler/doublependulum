@@ -40,6 +40,12 @@ Kinetic energy:
 T = \frac{1}{2}m_1 l_1^2 \dot{\theta}_1 + \frac{1}{2}m_2(l_1^2\dot{\theta}_1^2 + l_2^2\dot{\theta}_2^2 + 2 l_1 l_2 \theta_1 \theta_2 cos(\theta_1 - \theta_2))
 ```
 
+The equation of motion is best derived using the Lagranian formalism:
+
+```math
+L = T - U
+```
+
 Equation of motion:
 
 ![Equation of Motion](eom.png)
