@@ -61,7 +61,18 @@ where $q_i$ are the generalized coordinates (in our case the angles). We get:
 \end{aligned}
 ```
 
-The equation of motion is a coupled set of differential equations which I think cannot be solved analytically, thus we use the Euler method to solve it numerically. The Euler method only works for first order differential equations. The equation of motion is a a coupled set of two second order differential equations, thus we first have to transform it to first order differential equations. The result [is](https://www.youtube.com/watch?v=aTMJX1ZgMB0&t=433s):
+The equation of motion is a coupled set of differential equations which I think cannot be solved analytically, thus we use the Euler method to solve it numerically. The Euler method only works for first order differential equations. The equation of motion is a a coupled set of two second order differential equations, thus we first have to transform it to first order differential equations. Using the following substitutions
+
+```math
+\begin{aligned}
+y_1 &= \theta_1
+y_2 &= \dot{\theta}_1
+y_3 &= \theta_2
+y_4 &= \dot{\theta}_2
+\end{aligned}
+```
+
+the result [is](https://www.youtube.com/watch?v=aTMJX1ZgMB0&t=433s):
 
 Equation of motion:
 
