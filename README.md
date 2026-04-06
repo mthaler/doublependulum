@@ -49,7 +49,7 @@ L = T - U
 The Euler-Lagrane equation for the equation of motion is 
 
 ```math
-\frac{d}{dt}\frac{dL}{d \dot{q}_i} - \frac{dL}{d \dot{q}_i}  = 0 
+\frac{d}{dt}\frac{dL}{d \dot{q}_i} - \frac{dL}{d q_i}  = 0 
 ```
 
 where q_i are the generalized coordinates (in our case the angles)
