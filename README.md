@@ -74,6 +74,12 @@ y_4 &= \dot{\theta}_2
 
 the result [is](https://www.youtube.com/watch?v=aTMJX1ZgMB0&t=433s):
 
+```math
+\begin{aligned}
+\dot{y}_1 &= y2
+\end{aligned}
+```
+
 Equation of motion:
 
 ![Equation of Motion](eom.png)
