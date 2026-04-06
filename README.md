@@ -25,6 +25,12 @@ Velocities:
 \end{aligned}
 ```
 
+Potential energy:
+
+```math
+V = m_1gy_1+m_2gy_2
+```
+
 Equation of motion:
 
 ![Equation of Motion](eom.png)
