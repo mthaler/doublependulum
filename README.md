@@ -37,7 +37,7 @@ V &= m_1gy_1+m_2gy_2 \\
 Kinetic energy:
 
 ```math
-T = \frac{1}{2}m_1 l_1^2 \dot{\theta}_1 + \frac{1}{2}m_2(l_1^2\dot{\theta}_1^2 + l_2^2\dot{\theta}_2^2 + 2 l_1 l_2 \theta_1 \theta_2 cos(\theta_1 - \ţheta_2))
+T = \frac{1}{2}m_1 l_1^2 \dot{\theta}_1 + \frac{1}{2}m_2(l_1^2\dot{\theta}_1^2 + l_2^2\dot{\theta}_2^2 + 2 l_1 l_2 \theta_1 \theta_2 cos(\theta_1 - \theta_2))
 ```
 
 Equation of motion:
