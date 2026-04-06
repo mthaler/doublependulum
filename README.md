@@ -40,13 +40,13 @@ Kinetic energy:
 T = \frac{1}{2}m_1 l_1^2 \dot{\theta}_1 + \frac{1}{2}m_2(l_1^2\dot{\theta}_1^2 + l_2^2\dot{\theta}_2^2 + 2 l_1 l_2 \theta_1 \theta_2 cos(\theta_1 - \theta_2))
 ```
 
-The equation of motion is best derived using the Lagrangeian formalism:
+The equation of motion is best derived using the Lagrange formalism:
 
 ```math
 L = T - U
 ```
 
-The Euler-Lagrane equation for the equation of motion is 
+The Euler-Lagrange equation for the equation of motion is 
 
 ```math
 \frac{d}{dt}\frac{dL}{d \dot{q}_i} - \frac{dL}{d q_i}  = 0 
