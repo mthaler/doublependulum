@@ -55,7 +55,10 @@ The Euler-Lagrange equation for the equation of motion is
 We get:
 
 ```math
-(m_1 + m_2)l_1^2 \ddot{\theta}_1 + m_2 l_1 l_2 \ddot{\theta}_2 cos(\theta_1-\theta_2) + m_2 l_1 l_2 \ddot{\theta}_2 sin(\theta_1 - \theta_2) + (m_1 + m_22) g l_2 sin(\theta_1) = 0
+\begin{aligned}
+(m_1 + m_2)l_1^2 \ddot{\theta}_1 + m_2 l_1 l_2 \ddot{\theta}_2 cos(\theta_1-\theta_2) + m_2 l_1 l_2 \ddot{\theta}_2 sin(\theta_1 - \theta_2) + (m_1 + m_22) g l_2 sin(\theta_1) &= 0 \\
+l2th2dotdot + l1th1dotdot cos(th1-th2) - l1 th1dot^2 sin(th1-th2) + g sin(th2) = 0
+\end{aligned}
 ```
 
 where $q_i$ are the generalized coordinates (in our case the angles)
