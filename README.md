@@ -76,7 +76,7 @@ the result [is](https://www.youtube.com/watch?v=aTMJX1ZgMB0&t=433s):
 
 ```math
 \begin{aligned}
-\dot{y}_1 &= y2
+\dot{y}_1 &= y_2
 \end{aligned}
 ```
 
