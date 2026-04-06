@@ -46,6 +46,14 @@ The equation of motion is best derived using the Lagrangeian formalism:
 L = T - U
 ```
 
+The Euler-Lagrane equation for the equation of motion is 
+
+```math
+\frac{d}{dt}\frac{dL}{d \dot{q}_i} - \frac{dL}{d \dot{q}_i}  = 0 
+```
+
+where q_i are the generalized coordinates (in our case the angles)
+
 Equation of motion:
 
 ![Equation of Motion](eom.png)
