@@ -52,7 +52,7 @@ The Euler-Lagrane equation for the equation of motion is
 \frac{d}{dt}\frac{dL}{d \dot{q}_i} - \frac{dL}{d q_i}  = 0 
 ```
 
-where q_i are the generalized coordinates (in our case the angles)
+where $q_i$ are the generalized coordinates (in our case the angles)
 
 Equation of motion:
 
