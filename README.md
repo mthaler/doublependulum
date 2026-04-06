@@ -55,7 +55,7 @@ The Euler-Lagrane equation for the equation of motion is
 We get:
 
 ```math
-(m_1 + m_2)l_1^2 th1dotdot + m2 l1 l2 th2dotdot cos(th1-th2) + m2 l1 l2 th2dotdot sin(th1 - th2) + (m1 + m2) g l1 sin(th1) = 0
+(m_1 + m_2)l_1^2 \ddot{\theta}_1 + m_2 l_1 l_2 \ddot{\theta}_2 cos(th1-th2) + m2 l1 l2 th2dotdot sin(th1 - th2) + (m1 + m2) g l1 sin(th1) = 0
 ```
 
 where $q_i$ are the generalized coordinates (in our case the angles)
