@@ -77,6 +77,7 @@ the result [is](https://www.youtube.com/watch?v=aTMJX1ZgMB0&t=433s):
 ```math
 \begin{aligned}
 \dot{y}_1 &= y_2
+\dot{y}_2 &= \frac{[-m2l1y2^2sin(y1-y3)cos(y1-y3)]+m2gsin(y3)cos(y1-y3)-m2ly4^2sin(y1-y3)-(m1+m2)gsin(y1)}{[(m_1+m_2)l_1-m_2 l_1 cos^2(y1-y3)]} 
 \end{aligned}
 ```
 
