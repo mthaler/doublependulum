@@ -1,6 +1,8 @@
 package main
 
 import (
+	"math"
+
 	"gonum.org/v1/plot/plotter"
 )
 
@@ -18,14 +20,11 @@ const (
 
 func main() {
 	var points []data
-	deltat := 1.0 / 10.0
-	for i := 0; i <= 500; i++ {
+	deltat := 1 / 100.0
+	for i := 0; i <= 1000; i++ {
 		if i == 0 {
 			// as inital value for x we use x0
-			points = append(points, plotter.XY{
-				X: 0.0,
-				Y: x(x0, 0, deltat),
-			})
+			points = append(points, data{y1: th1 / math.Pi, y2: v1 / math.Pi, y3: th2 / math.Pi, y4: v2 / math.Pi})
 		} else {
 			t := float64(i) / 10.0
 			xprev := points[i-1].X
