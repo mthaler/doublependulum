@@ -2,6 +2,8 @@ package main
 
 import (
 	"math"
+
+	"gonum.org/v1/plot/plotter"
 )
 
 const (
@@ -29,6 +31,14 @@ func main() {
 			points = append(points, d)
 		}
 	}
+	points2 := plotter.XYs{}
+	for i := 0; i <= 1000; i++ {
+		t := float64(i) / 10.0
+		points2 = append(points2, plotter.XY{
+			X: t,
+			Y: l1*math.Sin(points[i].y1) + l2*math.Sin(points[i].y3),
+		})
+	}
 	b := bounds{
 		xmin: 0,
 		xmax: 5,
@@ -39,5 +49,5 @@ func main() {
 		x: "t",
 		y: "x",
 	}
-	CreateLineplotPlot(points, "t - x", l, b, "eom.png")
+	CreateLineplotPlot(points2, "t - x", l, b, "eom.png")
 }
