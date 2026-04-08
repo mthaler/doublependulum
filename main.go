@@ -2,8 +2,6 @@ package main
 
 import (
 	"math"
-
-	"gonum.org/v1/plot/plotter"
 )
 
 const (
@@ -20,18 +18,15 @@ const (
 
 func main() {
 	var points []data
-	deltat := 1 / 100.0
 	for i := 0; i <= 1000; i++ {
 		if i == 0 {
 			// as inital value for x we use x0
 			points = append(points, data{y1: th1 / math.Pi, y2: v1 / math.Pi, y3: th2 / math.Pi, y4: v2 / math.Pi})
 		} else {
+			deltat := 1 / 100.0
 			t := float64(i) / 10.0
-			xprev := points[i-1].X
-			points = append(points, plotter.XY{
-				X: t,
-				Y: x(xprev, t, deltat),
-			})
+			d := angles(points[i-1], t, deltat)
+			points = append(points, d)
 		}
 	}
 	b := bounds{
