@@ -79,7 +79,7 @@ the result:
 ```math
 \begin{aligned}
 \dot{y}_1 &= y_2\\
-\dot{y}_2 &= \frac{-m_2 l_1 y_2^2 sin(y_1-y_3)cos(y_1-y_3)+m_2 g sin(y_3)cos(y_1-y_3)-m_2 l_2 y_4^2 sin(y_1-y_3)-(m1+m2)g sin(y_1)}{[(m_1+m_2)l_1-m_2 l_1 cos^2(y_1-y_3)]}\\
+\dot{y}_2 &= \frac{-m_2 l_1 y_2^2 sin(y_1-y_3)cos(y_1-y_3)+m_2 g sin(y_3)cos(y_1-y_3)-m_2 l_2 y_4^2 sin(y_1-y_3)-(m_1+m_2)g sin(y_1)}{[(m_1+m_2)l_1-m_2 l_1 cos^2(y_1-y_3)]}\\
 \dot{y}_3 &= y_4\\
 \dot{y}_4 &= \frac{l_1 y_2^2sin(y_1-y_3)-g sin(y_3)+\frac{m_2 l_22}{(m_1 + m_2)}y_4^2 sin(y_1-y_3)cos(y1-y3)+gsin(y1)cos(y1-y3)}{l_2-\frac{m_2 l_2}{m_1+m_2}cos^2(y_1-y_3)}
 \end{aligned}
