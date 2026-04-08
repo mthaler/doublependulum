@@ -1,7 +1,7 @@
 # doublependulum
 The equation of motion and the phase diagram of a pendulum
 
-I used this video to derive the [equation of motion](https://www.youtube.com/watch?v=tc2ah-KnDXw)
+I used this video to derive the [equation of motion](https://www.youtube.com/watch?v=aTMJX1ZgMB0)
 
 ![double pendulum](doublependulum.png)
 
@@ -79,9 +79,9 @@ the result:
 ```math
 \begin{aligned}
 \dot{y}_1 &= y_2\\
-\dot{y}_2 &= \frac{[-m_2 l_1 y-22^2 sin(y_1-y_3)cos(y_1-y_3)]+m_2 g sin(y_3)cos(y_1-y_3)-m_2 l y_4^2 sin(y_1-y_3)-(m1+m2)g sin(y_1)}{[(m_1+m_2)l_1-m_2 l_1 cos^2(y1-y3)]}\\
+\dot{y}_2 &= \frac{[-m_2 l_1 y_2^2 sin(y_1-y_3)cos(y_1-y_3)]+m_2 g sin(y_3)cos(y_1-y_3)-m_2 l_2 y_4^2 sin(y_1-y_3)-(m1+m2)g sin(y_1)}{[(m_1+m_2)l_1-m_2 l_1 cos^2(y_11-y_33)]}\\
 \dot{y}_3 &= y_4\\
- \dot{y}_4 &= \frac{l1 y2^2sin(y1-y3)-gsin(y3)+m2l2/(m1 +2)y4^2sin(y1-y3)cos(y1-y3)+gsin(y1)cos(y1-y3)}
+\dot{y}_4 &= \frac{l1 y2^2sin(y1-y3)-gsin(y3)+m2l2/(m1 +2)y4^2sin(y1-y3)cos(y1-y3)+gsin(y1)cos(y1-y3)}
 \end{aligned}
 ```
 
