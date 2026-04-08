@@ -14,15 +14,15 @@ type line struct {
 	points plotter.XYs
 }
 
-func CreateLineplotPlot(title string, labels labels, bounds bounds, file string, points ...plotter.XYs) {
+func CreateLineplotPlot(title string, labels labels, bounds bounds, file string, lines ...line) {
 	p := plot.New()
 	p.Title.Text = title
 	p.X.Label.Text = labels.x
 	p.Y.Label.Text = labels.y
 	p.X.Min, p.X.Max, p.Y.Min, p.Y.Max = bounds.xmin, bounds.xmax, bounds.ymin, bounds.ymax
 
-	for _, pts := range points {
-		err := plotutil.AddLines(p, "", pts)
+	for _, line := range lines {
+		err := plotutil.AddLines(p, line.label, line.points)
 		if err != nil {
 			log.Fatalf("could not create lineplot: %+v", err)
 		}

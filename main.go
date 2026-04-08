@@ -49,5 +49,5 @@ func main() {
 		x: "t",
 		y: "x",
 	}
-	CreateLineplotPlot("t - x", l, b, "eom.png", line1.points)
+	CreateLineplotPlot("t - x", l, b, "eom.png", line1)
 }
