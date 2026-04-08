@@ -20,14 +20,11 @@ import "math"
 func x(prev data, t, deltat float64) data {
 	// to simplify things we make the approximation that the previous value of a varialbe is approximately the current value of the variable
 
-	y1 := prev.y2 + deltat*prev.y2
+	y1 := prev.y1 + deltat*prev.y1
 	d := data{}
-	d.y2 = (-m2l1y2 ^ 2*sin(y1-y3)*cos(y1-y3) + m2gsin(y3)*cos(y1-y3) - m2ly4 ^ 2*sin(y1-y3) - (m1+m2)*g*sin(y1)) / ((m1+m2)*l1 - m2*l1*math.Cos(y1-prev.y3)*math.Cos(y1-prev.y3))
-
+	d.y2 = prev.y2 + deltat*(-m2*l1*prev.y2*prev.y2*math.Sin(y1-prev.y3)*math.Cos(y1-prev.y3)+m2*g*math.Sin(prev.y3)*math.Cos(y1-prev.y3)-m2*l2*prev.y4*prev.y4*math.Sin(y1-prev.y3)-(m1+m2)*g*math.Sin(y1))/((m1+m2)*l1-m2*l1*math.Cos(y1-prev.y3)*math.Cos(y1-prev.y3))
 	//y1 := prev.y1 + deltat * y2
 	//y2 := ((m1+m2)l1-m2l1cos^2(y1-y3))^-1 [-m2l1y2^2sin(y1-y3)cos(y1-y3)]+m2gsin(y3)cos(y1-y3)-m2ly4^2sin(y1-y3)-(m1+m2)gsin(y1)
 	//y3 := prev.y3 + deltat * y4
-
-	d.y2
 	return d
 }
