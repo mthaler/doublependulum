@@ -91,7 +91,7 @@ $$
 y_{n+1} = y_n + h f(t_n, y_n)
 $$ 
 
-Equation of motion:
+The qquation of motion is:
 
 ![Equation of Motion](eom.png)
 
