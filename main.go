@@ -5,11 +5,15 @@ import (
 )
 
 const (
-	x0     = 0.3
-	phimax = 0.5
-	g      = 9.81
-	l1     = 3.0
-	l2     = 1.0
+	g   = 9.81 // Aceleration due to gravity
+	l1  = 1.0  // Length of the first pendulum
+	l2  = 1.0  // Length of the second pendulum
+	m1  = 0.5  // Mass of the first pendulum
+	m2  = 0.5  // Mass of the second pendulum
+	th1 = 45   // Inital displacement of the first pendulum
+	th2 = 0    // Inital displacement of the second pendulum
+	v1  = 0    // initial velocity of the first pendulum
+	v2  = 0    // initial velocity of the first pendulum
 )
 
 func main() {
