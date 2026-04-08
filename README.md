@@ -85,7 +85,11 @@ the result:
 \end{aligned}
 ```
 
-I don't think the diffential equations can be solved analytically, thus we solve it numerically using [Euler's method](https://en.wikipedia.org/wiki/Euler_method).
+I don't think the diffential equations can be solved analytically, thus we solve it numerically using [Euler's method](https://en.wikipedia.org/wiki/Euler_method). For the solution we get:
+
+$$
+y_{(n+1)} = y_n + h f(t_n, y_n)
+$$ 
 
 Equation of motion:
 
