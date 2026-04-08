@@ -74,7 +74,7 @@ y_4 &= \dot{\theta}_2
 \end{aligned}
 ```
 
-the result [is](https://www.youtube.com/watch?v=aTMJX1ZgMB0&t=433s):
+the result:
 
 ```math
 \begin{aligned}
