@@ -85,6 +85,8 @@ the result:
 \end{aligned}
 ```
 
+I don't think the diffential equations can be solved analytically, thus we solve it numerically using Euler's method.
+
 Equation of motion:
 
 ![Equation of Motion](eom.png)
