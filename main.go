@@ -31,10 +31,10 @@ func main() {
 			points = append(points, d)
 		}
 	}
-	points2 := plotter.XYs{}
+	line1 := line{}
 	for i := 0; i <= 1000; i++ {
 		t := float64(i) / 10.0
-		points2 = append(points2, plotter.XY{
+		line1.points = append(line1.points, plotter.XY{
 			X: t,
 			Y: l1*math.Sin(points[i].y1) + l2*math.Sin(points[i].y3),
 		})
@@ -49,5 +49,5 @@ func main() {
 		x: "t",
 		y: "x",
 	}
-	CreateLineplotPlot("t - x", l, b, "eom.png", points2)
+	CreateLineplotPlot("t - x", l, b, "eom.png", line1.points)
 }
