@@ -9,6 +9,11 @@ import (
 	"gonum.org/v1/plot/vg"
 )
 
+type line struct {
+	label  string
+	points plotter.XYs
+}
+
 func CreateLineplotPlot(title string, labels labels, bounds bounds, file string, points ...plotter.XYs) {
 	p := plot.New()
 	p.Title.Text = title
