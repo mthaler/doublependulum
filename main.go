@@ -20,7 +20,7 @@ const (
 
 func main() {
 	var points []data
-	for i := 0; i <= 1000; i++ {
+	for i := 0; i <= 10000; i++ {
 		if i == 0 {
 			// as inital value for x we use x0
 			points = append(points, data{y1: th1 / math.Pi, y2: v1 / math.Pi, y3: th2 / math.Pi, y4: v2 / math.Pi})
