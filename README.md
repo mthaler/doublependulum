@@ -3,6 +3,8 @@ The equation of motion and the phase diagram of a pendulum
 
 I used this video to derive the [equation of motion](https://www.youtube.com/watch?v=tc2ah-KnDXw)
 
+![double pendulum](doublependulum,png)
+
 Positions:
 
 ``` math
