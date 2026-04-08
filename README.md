@@ -58,7 +58,7 @@ where $q_i$ are the generalized coordinates (in our case the angles). We get:
 
 ```math
 \begin{aligned}
-(m_1 + m_2)l_1^2 \ddot{\theta}_1 + m_2 l_1 l_2 \ddot{\theta}_2 cos(\theta_1-\theta_2) + m_2 l_1 l_2 \ddot{\theta}_2 sin(\theta_1 - \theta_2) + (m_1 + m_22) g l_2 sin(\theta_1) &= 0 \\
+(m_1 + m_2)l_1^2 \ddot{\theta}_1 + m_2 l_1 l_2 \ddot{\theta}_2 cos(\theta_1-\theta_2) + m_2 l_1 l_2 \ddot{\theta}_2 sin(\theta_1 - \theta_2) + (m_1 + m_2) g l_2 sin(\theta_1) &= 0 \\
 \ddot{\theta_2} + \ddot{\theta_1} cos(\theta_1-\theta_2) - l_1 \dot{\theta}_1^2 sin(\theta_1-\theta_2) + g sin(\theta_2) &= 0
 \end{aligned}
 ```
@@ -79,7 +79,7 @@ the result:
 ```math
 \begin{aligned}
 \dot{y}_1 &= y_2\\
-\dot{y}_2 &= \frac{-m_2 l_1 y_2^2 sin(y_1-y_3)cos(y_1-y_3)+m_2 g sin(y_3)cos(y_1-y_3)-m_2 l_2 y_4^2 sin(y_1-y_3)-(m1+m2)g sin(y_1)}{[(m_1+m_2)l_1-m_2 l_1 cos^2(y_11-y_33)]}\\
+\dot{y}_2 &= \frac{-m_2 l_1 y_2^2 sin(y_1-y_3)cos(y_1-y_3)+m_2 g sin(y_3)cos(y_1-y_3)-m_2 l_2 y_4^2 sin(y_1-y_3)-(m1+m2)g sin(y_1)}{[(m_1+m_2)l_1-m_2 l_1 cos^2(y_1-y_3)]}\\
 \dot{y}_3 &= y_4\\
 \dot{y}_4 &= \frac{l_1 y_2^2sin(y_1-y_3)-g sin(y_3)+\frac{m_2 l_22}{(m_1 + m_2)}y_4^2 sin(y_1-y_3)cos(y1-y3)+gsin(y1)cos(y1-y3)}{l_2-\frac{m_2 l_2}{m_1+m_2}cos^2(y_1-y_3)}
 \end{aligned}
