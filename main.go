@@ -17,7 +17,7 @@ const (
 )
 
 func main() {
-	points := plotter.XYs{}
+	var points []data
 	deltat := 1.0 / 10.0
 	for i := 0; i <= 500; i++ {
 		if i == 0 {
