@@ -54,7 +54,7 @@ func main() {
 			deltat := 1 / 100.0
 			t := float64(i) / 10.0
 			d := angles(points3[i-1], t, deltat)
-			points2 = append(points2, d)
+			points3 = append(points3, d)
 		}
 	}
 	var points4 plotter.XYs
