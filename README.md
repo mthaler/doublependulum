@@ -95,7 +95,7 @@ The equation of motion is:
 
 ![Equation of Motion](eom.png)
 
-The double pendulum is one of the simplest chaotic systems. We see from the plot that lines with similar inital conditions diverge at some point (they become completely different). The code uses 45 degrees, 45.01 degrees and 45.02 degrees as an initial angle for the second pendulum. The lines are very similar in the beginning, the become completely different for larger t.
+The double pendulum is one of the simplest chaotic systems. We see from the plot that lines with similar inital conditions diverge at some point (they become completely different). The code uses 45 degrees, 45.01 degrees and 45.02 degrees as an initial angle for the first pendulum. The lines are very similar in the beginning, the become completely different for larger t.
 
 The phase diagram is pretty boring, it is just an ellipse:
 

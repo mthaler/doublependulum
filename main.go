@@ -107,4 +107,39 @@ func main() {
 		y: "x",
 	}
 	CreateLineplotPlot("t - x", l, b, "eom.png", line1, line2, line3)
+	var points7 []data
+	for i := 0; i <= 4000; i++ {
+		if i == 0 {
+			// as inital value for x we use x0
+			points7 = append(points7, data{y1: th1 / math.Pi, y2: v1 / math.Pi, y3: th2 / math.Pi, y4: v2 / math.Pi})
+		} else {
+			deltat := 1 / 100.0
+			t := float64(i) / 10.0
+			d := angles(points7[i-1], t, deltat)
+			points7 = append(points7, d)
+		}
+	}
+	var points8 plotter.XYs
+	for i := 0; i <= 4000; i++ {
+		points8 = append(points8, plotter.XY{
+			X: l1*math.Sin(points[i].y1) + l2*math.Sin(points[i].y3),
+			Y: points7[i].y2*l1*math.Sin(points7[i].y2) + points7[i].y4*l2*math.Sin(points7[i].y4),
+		})
+	}
+	line4, err := plotter.NewLine(points8)
+	if err != nil {
+		log.Fatalf("could not create line: %+v", err)
+	}
+	line4.LineStyle.Color = color.RGBA{R: 255, G: 0, B: 0, A: 255}
+	b2 := bounds{
+		xmin: -0.5,
+		xmax: 0.5,
+		ymin: -0.5,
+		ymax: 0.5,
+	}
+	l2 := labels{
+		x: "x",
+		y: "vx",
+	}
+	CreateLineplotPlot("x - vx", l2, b2, "pd.png", line4)
 }
