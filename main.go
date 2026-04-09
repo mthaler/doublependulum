@@ -45,6 +45,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("could not create line: %+v", err)
 	}
+	//line1.LineStyle.Width = vg.Points(1)
 	var points3 []data
 	for i := 0; i <= 4000; i++ {
 		if i == 0 {
@@ -66,10 +67,35 @@ func main() {
 		})
 	}
 	line2, err := plotter.NewLine(points4)
+	line2.LineStyle.Color = color.RGBA{R: 0, G: 255, B: 0, A: 255}
 	if err != nil {
 		log.Fatalf("could not create line: %+v", err)
 	}
-	line2.LineStyle.Color = color.RGBA{R: 0, G: 255, B: 0, A: 255}
+	var points5 []data
+	for i := 0; i <= 4000; i++ {
+		if i == 0 {
+			// as inital value for x we use x0
+			points5 = append(points5, data{y1: (th1 + 0.02) / math.Pi, y2: v1 / math.Pi, y3: th2 / math.Pi, y4: v2 / math.Pi})
+		} else {
+			deltat := 1 / 100.0
+			t := float64(i) / 10.0
+			d := angles(points5[i-1], t, deltat)
+			points5 = append(points5, d)
+		}
+	}
+	var points6 plotter.XYs
+	for i := 0; i <= 4000; i++ {
+		t := float64(i) / 10.0
+		points6 = append(points6, plotter.XY{
+			X: t,
+			Y: l1*math.Sin(points5[i].y1) + l2*math.Sin(points5[i].y3),
+		})
+	}
+	line3, err := plotter.NewLine(points6)
+	line3.LineStyle.Color = color.RGBA{R: 0, G: 0, B: 255, A: 255}
+	if err != nil {
+		log.Fatalf("could not create line: %+v", err)
+	}
 	b := bounds{
 		xmin: 0,
 		xmax: 5,
@@ -80,5 +106,5 @@ func main() {
 		x: "t",
 		y: "x",
 	}
-	CreateLineplotPlot("t - x", l, b, "eom.png", line1, line2)
+	CreateLineplotPlot("t - x", l, b, "eom.png", line1, line2, line3)
 }
