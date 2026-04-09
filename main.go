@@ -45,7 +45,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("could not create line: %+v", err)
 	}
-	//line1.LineStyle.Width = vg.Points(1)
+	line1.LineStyle.Color = color.RGBA{R: 255, G: 0, B: 0, A: 255}
 	var points3 []data
 	for i := 0; i <= 4000; i++ {
 		if i == 0 {
