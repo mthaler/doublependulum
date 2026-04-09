@@ -1,6 +1,8 @@
 package main
 
 import (
+	"image/color"
+	"log"
 	"math"
 
 	"gonum.org/v1/plot/plotter"
@@ -20,7 +22,7 @@ const (
 
 func main() {
 	var points []data
-	for i := 0; i <= 10000; i++ {
+	for i := 0; i <= 4000; i++ {
 		if i == 0 {
 			// as inital value for x we use x0
 			points = append(points, data{y1: th1 / math.Pi, y2: v1 / math.Pi, y3: th2 / math.Pi, y4: v2 / math.Pi})
@@ -31,14 +33,43 @@ func main() {
 			points = append(points, d)
 		}
 	}
-	line1 := line{}
-	for i := 0; i <= 1000; i++ {
+	var points2 plotter.XYs
+	for i := 0; i <= 4000; i++ {
 		t := float64(i) / 10.0
-		line1.points = append(line1.points, plotter.XY{
+		points2 = append(points2, plotter.XY{
 			X: t,
 			Y: l1*math.Sin(points[i].y1) + l2*math.Sin(points[i].y3),
 		})
 	}
+	line1, err := plotter.NewLine(points2)
+	if err != nil {
+		log.Fatalf("could not create line: %+v", err)
+	}
+	var points3 []data
+	for i := 0; i <= 4000; i++ {
+		if i == 0 {
+			// as inital value for x we use x0
+			points3 = append(points3, data{y1: (th1 + 0.01) / math.Pi, y2: v1 / math.Pi, y3: th2 / math.Pi, y4: v2 / math.Pi})
+		} else {
+			deltat := 1 / 100.0
+			t := float64(i) / 10.0
+			d := angles(points3[i-1], t, deltat)
+			points2 = append(points2, d)
+		}
+	}
+	var points4 plotter.XYs
+	for i := 0; i <= 4000; i++ {
+		t := float64(i) / 10.0
+		points4 = append(points4, plotter.XY{
+			X: t,
+			Y: l1*math.Sin(points3[i].y1) + l2*math.Sin(points3[i].y3),
+		})
+	}
+	line2, err := plotter.NewLine(points4)
+	if err != nil {
+		log.Fatalf("could not create line: %+v", err)
+	}
+	line2.LineStyle.Color = color.RGBA{R: 0, G: 255, B: 0, A: 255}
 	b := bounds{
 		xmin: 0,
 		xmax: 5,
@@ -49,5 +80,5 @@ func main() {
 		x: "t",
 		y: "x",
 	}
-	CreateLineplotPlot("t - x", l, b, "eom.png", line1)
+	CreateLineplotPlot("t - x", l, b, "eom.png", line1, line2)
 }

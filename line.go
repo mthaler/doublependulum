@@ -9,12 +9,7 @@ import (
 	"gonum.org/v1/plot/vg"
 )
 
-type line struct {
-	label  string
-	points plotter.XYs
-}
-
-func CreateLineplotPlot(title string, labels labels, bounds bounds, file string, lines ...line) {
+func CreateLineplotPlot(title string, labels labels, bounds bounds, file string, lines ...*plotter.Line) {
 	p := plot.New()
 	p.Title.Text = title
 	p.X.Label.Text = labels.x
@@ -22,7 +17,7 @@ func CreateLineplotPlot(title string, labels labels, bounds bounds, file string,
 	p.X.Min, p.X.Max, p.Y.Min, p.Y.Max = bounds.xmin, bounds.xmax, bounds.ymin, bounds.ymax
 
 	for _, line := range lines {
-		err := plotutil.AddLines(p, line.label, line.points)
+		err := plotutil.AddLines(p, line)
 		if err != nil {
 			log.Fatalf("could not create lineplot: %+v", err)
 		}
